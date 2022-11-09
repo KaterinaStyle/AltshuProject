@@ -64,3 +64,22 @@
     color: #078600;
     text-decoration: none;
   }
+
+  .topmain {
+    width: 100%;
+    background-color: #6EE768;
+    height: 770px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .greating {
+    
+  }
+  
+  .description {
+    font-family: 'Roboto', sans-serif; 
+    color: #078600;
+    font-size: 72px;
+  }
