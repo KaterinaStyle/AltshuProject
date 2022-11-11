@@ -123,7 +123,7 @@ button {
 }
 
 .about_school_picture {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .about_school_text {
@@ -138,4 +138,5 @@ button {
 
 .big_picture {
   align-self: center;
+  margin-right: 48px;
  }
