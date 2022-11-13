@@ -13,6 +13,8 @@
   border-bottom-color: #078600;
   justify-content: space-between;
   align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .blog {
@@ -79,16 +81,16 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  }
+  padding: 48px;
+   }
 
 .greating {
   color: #078600;
   font-size: 22px;
   display: flex;
   flex-direction: column;
-  margin-left: 48px;
-  margin-right: 48px;
-}
+  margin: 48px;
+ }
 
 .description {
   font-family: 'Roboto', sans-serif; 
@@ -149,7 +151,8 @@ button {
 
 .big_picture {
   align-self: center;
-  margin-right: 48px;  
+  margin-right: 48px; 
+  width:40%; 
  }
 
  .introduction {
@@ -191,10 +194,11 @@ button {
  }
 
 h4 {
-  font-size: 48px;
+  font-size: 36px;
   font-family: 'Roboto', sans-serif; 
   color: #870047;
   padding-bottom: 24px;
+  word-break:break-all;
 
 }
 
@@ -267,6 +271,7 @@ h5 {
   display: flex;
   color:#870047;
   font-size: 24px;
+
 }
 
 .work_description {
@@ -275,25 +280,93 @@ h5 {
  color:#870047;
  font-size: 12px;
  margin-bottom: 24px;
- width: 90%;
+ width: 100%;
 }
 
-.etc {
+.etc_common {
   display: flex;
   flex-direction: row;
 
 }
+.etc {
+  width: 200px;
+  height: 120px;  
+  background-color:#E868AB;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.etc_common div:nth-child(1) {
+  flex-grow: 0.8;
+}
+
 
 .etc_textstyle {
   color:#078600;
-  background-color:#E868AB;
-  border-radius: 32px;
-  height: 125px;
-  width: 200px;
   justify-items: center;
   font-size: 36px;
 }
 
 .etc_textstyle:hover {
   color: #42E73A;
+}
+
+.article  {
+    width: 100%;
+    margin: 48px;
+    margin-bottom: 0px;
+  }
+
+.article_common_block {
+  background-color: #6EE768;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 8px;
+  padding-left: 8px;
+  width: 100%;
+
+
+}
+
+.article_title_block {
+  font-size: 36px;
+  color: #078600;
+}
+
+.article_block {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+}
+
+.article_text {
+  font-size: 20px;
+  color: #870047;
+  word-break: break-word;
+}
+
+.contacts  {
+  width: 100%;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding: 48px;
+  background-color: #6EE768;
+}
+
+.connect {
+  color: #2D9B27;
+  font-size: 32px;
+}
+
+.mind {
+  color: #870047;
+  font-size: 32px;
+}
+
+.contact_text {
+  color:#870047;
+  font-size: 16px;
 }
