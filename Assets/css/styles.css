@@ -2,13 +2,15 @@
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
+ 
   }
+
 
 .top {
   display: flex;
   flex-direction: row;
   background-color: #6EE768;
-  width: 100%;
+ 
   border-bottom-style: solid;
   border-bottom-color: #078600;
   justify-content: space-between;
@@ -76,12 +78,14 @@ button {
   text-decoration: underline;
 }
 .topmain {
-  width: 100%;
+  
   background-color: #6EE768;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 48px;
+  border-bottom-style: solid;
+  border-bottom-color: #078600;
    }
 
 .greating {
@@ -156,7 +160,7 @@ button {
  }
 
  .introduction {
-  width: 100%;
+ 
   margin: 48px;
   
  }
@@ -164,7 +168,7 @@ button {
 .introduction_structure {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  
   
 }
 
@@ -232,7 +236,7 @@ h5 {
 .introduction_numbers {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  
   justify-content: space-between;
   margin-bottom: 48px;
     
@@ -251,11 +255,11 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  
 }
 
 .work {
-  width: 100%;
+ 
   margin: 48px;
 }
 
@@ -263,8 +267,12 @@ h5 {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  width: 100%;
   flex:1 1 0%;  
+  
+}
+
+.work_start_end_article, .work_others {
+  padding: 8px;
 }
 
 .work_article_title {
@@ -280,7 +288,7 @@ h5 {
  color:#870047;
  font-size: 12px;
  margin-bottom: 24px;
- width: 100%;
+ 
 }
 
 .etc_common {
@@ -314,9 +322,10 @@ h5 {
 }
 
 .article  {
-    width: 100%;
     margin: 48px;
-    margin-bottom: 0px;
+    margin-bottom: 48px;
+    border-width: 2px;
+    border-color: #078600;
   }
 
 .article_common_block {
@@ -325,7 +334,7 @@ h5 {
   padding-bottom: 24px;
   padding-right: 8px;
   padding-left: 8px;
-  width: 100%;
+  
 
 
 }
@@ -349,11 +358,11 @@ h5 {
 }
 
 .contacts  {
-  width: 100%;
-  margin-left: 48px;
-  margin-right: 48px;
+  
   padding: 48px;
   background-color: #6EE768;
+  border-top-style:solid;
+  border-top-color: #078600;
 }
 
 .connect {
