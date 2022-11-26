@@ -109,9 +109,9 @@ button {
   height: 88px;
   background-color: #E868AB;
   border-color: #870047;
+  border-width: 1px;
   border-radius: 32px;
   margin: 40px;
-  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +125,11 @@ button {
   
 }
 
+.add_type {
+  display: inline-flex;
+  flex-direction: row;
+}
+
 .button-link {
    text-decoration: none;
   
@@ -132,6 +137,56 @@ button {
 
 .writeme_textstyle:hover {
   color: #42E73A;
+}
+
+.add_type_button:hover {
+  color: #42E73A;
+}
+
+.add_type_button {
+  width: 290px;
+  height: 98px;
+  background-color: #E868AB;
+  border-color: #870047;
+  border-width: 1px;
+  border-width: 0px;
+  border-radius: 32px;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif; 
+  color: #078600;
+   font-size: 36px;
+}
+
+.modalwin { 
+  height: 200px;  
+  width: 300px;
+  border: 3px outset gray; 
+  background: wheat;
+  top: 20%; 
+  right: 0;
+  left: 0;
+  font-size: 14px; 
+  margin: 0 auto;
+  z-index:2; 
+  display: none;  
+  position: fixed; 
+  padding: 15px;
+  border: 1px solid #383838;
+
+}
+#shadow { 
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index:1; 
+  background:#000;
+  opacity: 0.5; 
+  left:0;
+  top:0;
 }
 
 .about_school {
