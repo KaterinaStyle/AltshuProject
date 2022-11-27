@@ -17,22 +17,7 @@ addTypeButton.addEventListener ('click', () => {
    if (!isNaN(userInput[number]) == false) {
      alert("Надо вводить цифры");
      userInput.pop();
-   } else if (darkLayer.onclick) {
- if (userInput.length < 11) {
-        const checkInfo = confirm ('Вы хотите оставить заявку?');
-        if (checkInfo) {   
-            alert('Тогда введите номер телефона в указанном формате');
-                        } else {
-                            alert('Хорошо');
-                            darkLayer.parentNode.removeChild(darkLayer); 
-                            modalWin.style.display = 'none'; 
-                                };
-                            } else {
-                                darkLayer.parentNode.removeChild(darkLayer); 
-                                modalWin.style.display = 'none';     
-                                    };
-}
-                 else {document.querySelector('.button_ok').addEventListener('click', (e) => {
+   } else if ($(button_ok).click(e)) {
                         if (userInput.length < 11) {
                             const checkInfo = confirm ('Вы хотите оставить заявку?');
                             if (checkInfo) {   
@@ -46,9 +31,10 @@ addTypeButton.addEventListener ('click', () => {
                                                     darkLayer.parentNode.removeChild(darkLayer); 
                                                     modalWin.style.display = 'none';     
                                                         };
-                    });
+                    
+                } else if ($(button_cancel).click(e)) {
+                    darkLayer.parentNode.removeChild(darkLayer); 
+                                                    modalWin.style.display = 'none'; 
                 };
-
-
-});
- });
+            });
+        });
