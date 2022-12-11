@@ -1,8 +1,9 @@
+
+
 * {
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
-  padding: 0px;
- 
+  padding: 0px;  
   }
 
 
@@ -149,7 +150,6 @@ button {
   background-color: #E868AB;
   border-color: #870047;
   border-width: 1px;
-  border-width: 0px;
   border-radius: 32px;
   margin: 40px;
   display: flex;
@@ -162,9 +162,11 @@ button {
 }
 
 .modalwin { 
-  height: 200px;  
-  width: 300px;
+  height: 190px;  
+  width: 330px;
   border: 3px outset gray; 
+  border-color: #870047;
+  border-radius:30px;
   background: wheat;
   top: 20%; 
   right: 0;
@@ -178,6 +180,8 @@ button {
   border: 1px solid #383838;
 
 }
+
+
 #shadow { 
   position: fixed;
   width:100%;
@@ -209,6 +213,7 @@ button {
 }
 
 .big_picture {
+  display: inline-block;
   align-self: center;
   margin-right: 48px; 
   width:40%; 
@@ -257,13 +262,14 @@ h4 {
   font-family: 'Roboto', sans-serif; 
   color: #870047;
   padding-bottom: 24px;
-  word-break:break-all;
+  word-break: break-word;
 
 }
 
 h5 {
   font-size: 21px;
   padding-bottom: 6px;
+  word-break: break-word;
 }
 
 .review_person {
@@ -286,6 +292,7 @@ h5 {
 
 .introduction_description {
   margin-left: 124px;
+
 }
 
 .introduction_numbers {
@@ -294,16 +301,19 @@ h5 {
   
   justify-content: space-between;
   margin-bottom: 48px;
+ 
     
 }
 
 .intr_numb {
   color: #870047;
   font-size: 48px;
+  
 }
 
 .intr_let {
   font-size: 24px;
+    
 }
 
 .introduction_figure {
@@ -319,11 +329,9 @@ h5 {
 }
 
 .work_start_end {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  flex:1 1 0%;  
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
 }
 
 .work_start_end_article, .work_others {
@@ -334,6 +342,7 @@ h5 {
   display: flex;
   color:#870047;
   font-size: 24px;
+  max-width: 70%;
 
 }
 
@@ -343,6 +352,7 @@ h5 {
  color:#870047;
  font-size: 12px;
  margin-bottom: 24px;
+ max-width: 75%;
  
 }
 
@@ -394,6 +404,8 @@ h5 {
 
 }
 
+
+
 .article_title_block {
   font-size: 36px;
   color: #078600;
@@ -433,4 +445,30 @@ h5 {
 .contact_text {
   color:#870047;
   font-size: 16px;
+}
+
+.form {
+  margin:12px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content:center;
+}
+
+@media screen and (max-width: 1000px) {
+  .big_picture {
+      display: none;
+  };
+
+  .article_block {
+      display: grid; 
+      grid-auto-flow: row;
+      grid-auto-rows: 1fr;
+           
+    };
+
+
 }
