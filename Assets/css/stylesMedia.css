@@ -1,14 +1,97 @@
 @media screen and (max-width: 1000px) {
     .big_picture {
         display: none;
-    };
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .navtoplist_item {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 2.5em;
+    }
+
+    #introduction, #work, #article, #contacts {
+        font-size: 2.5em;
+      }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .h4style {
+        font-size: 2.5em;;
+    }
+
+    .h4style2 {
+        font-size: 1.8em;
+    }
+
+    .intr_let {
+        font-size: 18px;
+          
+      }
 
     .article_block {
-        display: grid; 
-        grid-auto-flow: row;
-        grid-auto-rows: 1fr;
-             
-      };
+
+    }
+    .contact_text {
+        color:#870047;
+        font-size: 42px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .big_picture {
+        display: none;
+    }
+    .article_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      
+      }
+      
+      .experience {
+        width: 30%;
+        min-width: 100px;
+        padding: 6px;
+      }
+      
+      .article_text {
+        word-break: break-word;
+        min-height: 100px;
+      }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .big_picture {
+        display: none;
+    }
+    .article_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      
+      }
+      
+      .experience {
+        width: 45%;
+        min-width: 100px;
+        padding: 6px;
+      }
+      
 
 
 }

@@ -1,5 +1,7 @@
 let addTypeButton = document.querySelector('.add_type_button');
 
+let cancelButton = document.querySelector('.cancel');
+let submitButton = document.querySelector('.submit');
 
 const modalWin = document.querySelector('#popupWin');
 const formRequest = document.querySelector('#this_form');
@@ -35,22 +37,42 @@ function closeDarkLayer() {
    modalWin.style.display = 'none';
 };  
 
-formRequest.addEventListener('submit', () =>{
-  phoneUser = phoneNumber.value; 
- // if (phoneUser.length !== 11) {
-   // let temptData;
-   // do {temptData = prompt('Введите 11 цифр номера телефона');
-     //  console.log(temptData);}
-    //while (temptData.length !== 11);
-   // fixDataFromUser();
-   // closeDarkLayer();
-  //} else {  
+cancelButton.addEventListener('click', () => {
+  textName.value = "";
+  phoneNumber.value = "";
+  textEmail.value = "";
+  checkboxTerms.checked = "true";
+closeDarkLayer();
+alert("Будем рады принять вашу заявку в следующий раз");
+event.preventDefault();
+});
+
+submitButton.addEventListener('click', () =>{
+ let phoneUserTemp = phoneNumber.value; 
+ let nameUserTemp = textName.value;
+  let termsTemp = checkboxTerms.checked;
+  console.log(phoneUserTemp);
+  console.log(nameUserTemp);
+  console.log(termsTemp);
+ if (phoneUserTemp.length !== 11) {
+   alert('Введите 11 цифр номера телефона');
+   event.preventDefault();
+  } else if (nameUserTemp == "") {
+      alert('Введите имя');
+      event.preventDefault();
+  }  else if (!termsTemp) {
+      alert('Надо принять условия');
+        console.log(phoneUserTemp);
+        console.log(nameUserTemp);
+        console.log(termsTemp);
+        event.preventDefault();    
+  } else {  
   fixDataFromUser();
   closeDarkLayer();
   alert('Спасибо. Мы свяжемся с вами');
   let jsonUserData = JSON.stringify(userData);
   console.log(jsonUserData);
-// };
+ };
   
   });
 });
@@ -58,17 +80,25 @@ formRequest.addEventListener('submit', () =>{
 
                              let ExperienceArray = [
                                 {
-                                content: "Кто круче: технарь или гуманитарий?"
+                                  content: "Кто круче: технарь или гуманитарий?"
                                 },
+
                                 {
-                                 content: "Все дело в красном пиджаке или все-таки нет?"
-                                 },
-                                 {
-                                 content: "Может делегировать?"
-                                 },
+                                  content: "Все дело в красном пиджаке или все-таки нет?"
+                                },
+
+                                {
+                                  content: "Может делегировать?"
+                                },
+
                                 {
                                   content: "Скоро появится новая статья"
                                 },
+
+                                {
+                                  content: "Скоро появится новая статья"
+                                },
+
                                 {
                                   content: "Посмотреть все статьи"
                                 }
@@ -91,6 +121,9 @@ formRequest.addEventListener('submit', () =>{
                                  {
                                  content: "В процессе"
                                  },
+                                {
+                                  content: "В процессе"
+                                },
                                 {
                                   content: "В процессе"
                                 },
