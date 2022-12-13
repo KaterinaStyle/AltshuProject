@@ -72,6 +72,15 @@ button {
   text-decoration: none;
 }
 
+.news_textstyle a {
+  text-decoration: none;
+}
+
+.news_textstyle a:hover {
+  text-decoration: underline;
+}
+
+
 .navtoplist_item img:hover {
   border:#078600
 }
@@ -485,3 +494,87 @@ h5 {
   justify-content:center;
 }
 
+.news_body {
+  background-color: #F5F5F5;
+  width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 3rem auto;
+  
+}
+
+.content_title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .wrapper {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;   
+   
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    min-height: 350px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow:
+    2px 2px 5.3px rgba(0, 0, 0, 0.028),
+    6.7px 6.7px 17.9px rgba(0, 0, 0, 0.042),
+    30px 30px 80px rgba(0, 0, 0, 0.07);
+  }  
+  
+    
+    .card__img {
+      display: block;
+      align-content: center;
+      min-height: 150px;
+      max-height: 250px;
+      background-color: violet;
+    }
+    
+    card__content {
+      flex: 0 0 70%;
+    }
+    
+    card__title {
+      font-size: 1.2rem;
+    }
+    
+    card__category {
+      color: #424242;
+      margin: .5rem 0;
+    }
+    
+    card__description {
+      font-size: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    
+    card__button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background-color: violet;
+      color: white;
+      text-decoration: none;
+    }
+  
