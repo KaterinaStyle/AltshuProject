@@ -306,7 +306,7 @@
 
             <article class="experience">
                 <img src="./Assets/pic/все статьи.png" alt="фото">
-                <p class="article_text"></p>
+                <a href="./news.php" class="news_textstyle"><p class="article_text"></p></a>
             </article> 
             </div>
         </article>
